@@ -1,0 +1,99 @@
+<br>
+<br>
+<div class="container mt-5">
+  <div class="card">
+    <!-- <h3 style="text-align: center;">Student Registration</h3> -->
+    <div class="card-header bg-primary text-white">
+      <h4>Student Attendence Form</h4>
+    </div>
+    <div [hidden]="submitted" class="container">
+      <div class="card-body">
+        <form (ngSubmit)="onSubmit()">
+         
+          <!-- Personal Information Section -->
+          <div class="form-row">
+            
+
+            
+          </div>
+
+          
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="id">Enter Date </label>
+              <input
+                type="date"
+                class="form-control"
+                id="id"
+                requird
+                [(ngModel)]="attendence.attendence_date"
+                name="studDOB"
+              />
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="status">Enter Status</label>
+              <input
+                type="text"
+                class="form-control"
+                id="status"
+                requird
+                [(ngModel)]="attendence.attendence_status"
+                name="attendence_status"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="number">Enter LeaveDays</label>
+              <input
+                type="number"
+                class="form-control"
+                id="LeaveDays"
+                requird
+                [(ngModel)]="attendence.leaveDays"
+                name="studEmail"
+              />
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="id">Enter StudentId</label>
+              <input
+                type="number"
+                class="form-control"
+                id="studId"
+                requird
+                [(ngModel)]="attendence.studId"
+                name="studPassword"
+              />
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="margin-right: 30%"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <div [hidden]="!submitted">
+        <!-- <h4>Form Submitted Successfully!</h4> -->
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  

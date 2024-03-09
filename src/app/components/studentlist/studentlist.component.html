@@ -1,0 +1,51 @@
+<div class="container mt-5">
+<div class="panel panel-primary container">
+    <div class="panel-heading">
+        <h2 class="heading">Student Data</h2>
+    </div>
+
+    <div class="panel-body">
+        <!-- <table class="table table-striped">
+            <thead> -->
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-dark">
+                <tr>
+                    <th>FirstName</th>
+                    <th>LastName </th>
+                    <th>Date Of Birth</th>
+                    <th>Address</th>
+                    <th>Contanct</th>
+                    <th>EmailId</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let s of student | async">
+                    <td>{{s.studFirstName}}</td>
+                    <td>{{s.studLastName}}</td>
+                    <td>{{s.studDOB | date}}</td>
+                    <td>{{s.studAddress}}</td>
+                    <td>{{s.studContact}}</td>
+                    <td>{{s.studEmail}}</td>
+                    
+
+                    <td>
+                        <button (click)="deleteStud(s.studId)" class="btn btn-danger" >Delete</button>
+
+                        <button (click)="StudentDetails(s.studId)" class="btn btn-info" style="margin-left: 10px;">Details</button>
+
+                        <button (click)="updateDetails(s.studId)" class="btn btn-success" style="margin-left: 10px;">Edit</button>
+                    </td>
+
+
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</div>
+
+<!--  -->

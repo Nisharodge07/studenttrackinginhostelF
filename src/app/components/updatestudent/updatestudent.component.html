@@ -1,0 +1,25 @@
+<br>
+<br>
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h4> Update Student Details</h4>
+          </div>
+
+    <div class="card-body">
+      <form (ngSubmit)="onSubmit()" class="container">
+    <div class="form-group col-md-12">
+        <label for="playerId" class="form-label">Student Id</label>
+        <input type="text" class="form-control" id="playerId" required [(ngModel)]="student.studId" name="studId">
+    </div>
+    <div class="form-group col-md-12">
+        <label for="playerName">StudentName</label>
+        <input type="text" class="form-control" id="playerName" requird [(ngModel)]="student.studFirstName" name="studFirstName">
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+
+    
+</form>
+</div>
+</div>
+</div>

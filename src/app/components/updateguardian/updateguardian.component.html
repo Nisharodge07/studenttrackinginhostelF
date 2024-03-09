@@ -1,0 +1,25 @@
+<br>
+<br>
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h4> Update Guardian Details</h4>
+          </div>
+
+    <div class="card-body">
+      <form (ngSubmit)="onSubmit()" class="container">
+    <div class="form-group col-md-12">
+        <label for="guardian_id" class="form-label">Guardian Id</label>
+        <input type="number" class="form-control" id="guardian_id" required [(ngModel)]="guardian.guardian_id" name="guardian_id">
+    </div>
+    <div class="form-group col-md-12">
+        <label for="guardian_name">Guardian Name</label>
+        <input type="text" class="form-control" id="guardian_name" requird [(ngModel)]="guardian.guardian_name" name="guardian_name">
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+
+    
+</form>
+</div>
+</div>
+</div>

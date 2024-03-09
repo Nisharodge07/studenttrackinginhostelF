@@ -1,0 +1,35 @@
+
+<br>
+<br>
+<div class="container mt-5">
+    
+<div *ngIf="hostel">
+    <div class="card">
+        <div class="card-header" style="color: brown">
+            <h4 style="color: brown">Hostel Details</h4>
+          </div>
+
+          <div class="card-body">
+    <div>
+        <strong> Id: </strong>{{hostel.hostel_id}}<br >
+    </div>
+    <div>
+        <strong> Name :</strong>{{hostel.hostel_name}}<br />
+    </div>
+
+    <div>
+        <strong> Capacity:</strong> {{hostel.hostel_capacity}}<br />
+    </div>
+
+    <div>
+        <strong> Address : </strong>{{hostel.hostel_address}}
+    </div>
+</div>
+</div> 
+</div>
+
+</div>
+<br>
+<br>
+
+<!-- <button (click)="list()">Back to Player List</button> -->

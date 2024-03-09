@@ -1,0 +1,95 @@
+<div class="container mt-5">
+    <br>
+    <br>
+<div class="card">  
+<div [hidden]="submitted" >
+    <div class="card-header bg-primary text-white">
+        <h4>Guardian Signup</h4>
+      </div>
+
+      <div class="card-body">
+    <form (ngSubmit)="onSubmit()">
+        
+
+        <!-- <div class="form-row"> 
+            <div class="form-group col-md-6">
+                <label for="id">Enter  id</label>
+                <input type="number" class="form-control" id="id" requird [(ngModel)]="guardian.guardian_id" name="guardian_id">
+            </div> -->
+
+    <div class="form-row"> 
+        <div class="form-group col-md-6">
+            <label for="id">Enter  name</label>
+            <input type="text" class="form-control" id="id" requird [(ngModel)]="guardian.guardian_name" name="guardian_name">
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="contact">Enter Contact number</label>
+            <input type="tel" class="form-control" id="contact" requird [(ngModel)]="guardian.guardian_contact" name="guardian_contact">
+        </div>
+    </div> 
+
+    <div class="form-row"> 
+        <div class="form-group col-md-6">
+            <label for="text">Enter relation</label>
+            <input type="text" class="form-control" id="relation" requird [(ngModel)]="guardian.guardian_relation" name="guardian_relation">
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="id">Enter Email</label>
+            <input type="email" class="form-control" id="Email" requird [(ngModel)]="guardian.guardian_email" name="guardian_email">
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="id">Enter StudentId</label>
+            <input type="number" class="form-control" id="studId" requird [(ngModel)]="guardian.studentId" name="stud">
+        </div>
+
+    </div>   
+        <!-- <div class="mb-3">
+            <label for="id">Enter studentId</label>
+            <input type="id" class="form-control" id="studentId" requird [(ngModel)]="guardian.students" name="studentId">
+        </div> 
+
+        <div class="mb-3">
+            <label for="stud">Choose student:</label>
+    
+          <select  name="stud" id="stud" #selectedstudent>
+              <option *ngFor="let s of students |  async ; let i = index" value="{{i}}"> {{s.studId}}</option>
+             
+            </select>
+            
+            <button type="button" (click)="addstudgaurdian(selectedstudent.value)" class="btn btn-info" style="margin-left: 10px">Add  student</button>
+          </div>
+        -->
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div> 
+</div>
+
+<div [hidden]="!submitted">
+    <!-- <h4>Form Submitted Successfully!</h4> -->
+
+</div>
+
+
+<!-- <br>
+  <div *ngFor="let g of guardian.students">
+    <p>{{g.studId}}</p>
+    <p>{{g.studFirstName}}</p>
+    <p>{{g.studLastName}}</p>
+    <p>{{g.studEmail}}</p>
+    <p>{{g.studContact}}</p>
+    <p>{{g.studDOB}}</p>
+     <p>{{guardian.guardian_id}}</p> 
+  </div> -->
+
+</div>
+</div>  
+
+<!--  -->
+
+
+  

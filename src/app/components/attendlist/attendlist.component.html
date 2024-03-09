@@ -1,0 +1,57 @@
+<div class="container mt-5">
+     <div class="panel panel-primary container">
+        <div class="panel-heading">
+            <h2 class="heading">Attendence Data</h2>
+        </div>
+    
+        <div class="panel-body">
+            <!-- <table class="table table-striped">
+                <thead> -->
+                    <table class="table table-bordered table-hover">
+                        <thead class="thead-dark">
+                    <tr>
+                        <th>Date</th>
+                        <th>Status </th>
+                        <th>Leave Days</th>
+                        <th>StudId</th>
+                        
+                        <th>Action</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr *ngFor="let s of attendence | async">
+                        <td>{{s.attendence_date | date}}</td>
+                        <td>{{s.attendence_status}}</td>
+                       
+                        <td>{{s.leaveDays}}</td>
+                        <td>{{s.studId}}</td>
+                        
+    
+                        <td>
+                            <button (click)="deleteattend(s.studId)" class="btn btn-danger" >Delete</button>
+    
+                            <button (click)="attendtDetails(s.studId)" class="btn btn-info" style="margin-left: 10px;">Details</button>
+    
+                            <button (click)="updateAttend(s.studId)" class="btn btn-success" style="margin-left: 10px;">Edit</button>
+                        </td>
+    
+    
+    
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+   
+    
+    
+
+
+
+   
+    
+     </div>
+ </div>    
+    <!--  -->
+            
+   

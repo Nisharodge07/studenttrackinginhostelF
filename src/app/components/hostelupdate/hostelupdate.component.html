@@ -1,0 +1,31 @@
+<br>
+<br>
+<div class="container mt-5">
+
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h4> Update Hostel Details</h4>
+          </div>
+
+    <div class="card-body">
+<form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+        <label for="hostelid" class="form-label">Hostel Id</label>
+        <input type="id" class="form-control" id="playerId" required [(ngModel)]="hostel.hostel_id" name="hostelid">
+    </div>
+    <div class="mb-3">
+        <label for="hostelname">HostelName</label>
+        <input type="text" class="form-control" id="hostelname" requird [(ngModel)]="hostel.hostel_name" name="hostelname">
+    </div>
+    <div>
+        <label for="hostelcapacity">Hostel Capacity</label>
+        <input type="number" class="form-control" id="hostelcapacity" required [(ngModel)]="hostel.hostel_capacity" name="hostelcapacity">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Update</button>
+
+    
+</form>
+</div>
+</div>
+</div>

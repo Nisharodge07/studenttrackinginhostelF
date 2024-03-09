@@ -1,0 +1,58 @@
+
+
+<div class="container mt-5">
+  <hr />
+  <div *ngIf="student" class="container mt-5">
+    <div class="card">
+      <div class="card-header" style="color: brown">
+        <h4 style="color: brown">Student Details</h4>
+      </div>
+
+      <div class="card-body">
+        <p class="card-text"></p>
+
+        <div>
+          <strong> FisrtName:</strong> {{ student.studFirstName }}<br />
+        </div>
+
+        <div><strong> LastName: </strong>{{ student.studLastName }}<br /></div>
+
+        <div><strong> Address: </strong>{{ student.studAddress }}<br /></div>
+
+        <div><strong> Contact: </strong>{{ student.studContact }}<br /></div>
+
+        <div>
+          <strong> Date Of Birth: </strong> {{ student.studDOB | date }}<br />
+        </div>
+
+        <div><strong>EmailId:</strong>{{ student.studEmail }}</div>
+
+        <br />
+      </div>
+
+      <div></div>
+
+      <br />
+      <br />
+    </div>
+    <!-- <button (click)="list()">Back to Player List</button> -->
+
+    <!--  
+    <div class="container mt-5">
+    <div class="card">
+      <div class="card-header">Student Details</div>
+      <div class="card-body">
+        <h5 class="card-title">John Doe</h5>
+        <p class="card-text">
+          <strong>Roll Number:</strong> 12345<br />
+          <strong>Class:</strong> 10th Grade<br />
+          <strong>Subjects:</strong> Math, Science, English<br />
+          <strong>Address:</strong> 123 Main Street, Cityville
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+  </div>
+</div>

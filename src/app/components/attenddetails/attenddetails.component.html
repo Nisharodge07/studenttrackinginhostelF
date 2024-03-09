@@ -1,0 +1,55 @@
+
+
+<div class="container mt-5">
+    <hr />
+    <div *ngIf="attendence" class="container mt-5">
+      <div class="card">
+        <div class="card-header" style="color: brown">
+          <h4 style="color: brown">attendence Details</h4>
+        </div>
+  
+        <div class="card-body">
+          <p class="card-text"></p>
+  
+          <div>
+            <strong> Date:</strong> {{ attendence.attendence_date | date}}<br />
+          </div>
+  
+          <div><strong> Status: </strong>{{ attendence.attendence_status }}<br /></div>
+  
+          <div><strong> leaveDays: </strong>{{ attendence.leaveDays }}<br /></div>
+  
+          <div><strong> StudentId: </strong>{{ attendence.studId }}<br /></div>
+  
+         
+  
+          <br />
+        </div>
+  
+        <div></div>
+  
+        <br />
+        <br />
+      </div>
+      <!-- <button (click)="list()">Back to Player List</button> -->
+  
+      <!--  
+      <div class="container mt-5">
+      <div class="card">
+        <div class="card-header">Student Details</div>
+        <div class="card-body">
+          <h5 class="card-title">John Doe</h5>
+          <p class="card-text">
+            <strong>Roll Number:</strong> 12345<br />
+            <strong>Class:</strong> 10th Grade<br />
+            <strong>Subjects:</strong> Math, Science, English<br />
+            <strong>Address:</strong> 123 Main Street, Cityville
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+    </div>
+  </div>
+  

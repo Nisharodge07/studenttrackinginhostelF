@@ -1,0 +1,132 @@
+<br>
+<br>
+<div class="container mt-5">
+  <div class="card">
+    <!-- <h3 style="text-align: center;">Student Registration</h3> -->
+    <div class="card-header bg-primary text-white">
+      <h4>Student Registration Form</h4>
+    </div>
+    <div [hidden]="submitted" class="container">
+      <div class="card-body">
+        <form (ngSubmit)="onSubmit()">
+          <!-- <div class="mb-3">
+            <label for="id" class="form-label">Enter Id</label>
+            <input type="text" class="form-control" id="id" required [(ngModel)]="student.studId" name="id">
+        </div> -->
+          <!-- Personal Information Section -->
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="id">Enter First Name</label>
+              <input
+                type="text"
+                class="form-control"  class="form-control"
+                id="id"
+                requird
+                [(ngModel)]="student.studFirstName"
+                name="studFirstName"
+              />
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="id">Enter Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="id"
+                requird
+                [(ngModel)]="student.studLastName"
+                name="studLastName"
+              />
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="id">Enter Address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="id"
+              requird
+              [(ngModel)]="student.studAddress"
+              name="studAddress"
+            />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="id">Enter Date of Birth</label>
+              <input
+                type="date"
+                class="form-control"
+                id="id"
+                requird
+                [(ngModel)]="student.studDOB"
+                name="studDOB"
+              />
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="id">Enter contact number</label>
+              <input
+                type="number"
+                class="form-control"
+                id="id"
+                requird
+                [(ngModel)]="student.studContact"
+                name="studContact"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="id">Enter EmailId</label>
+              <input
+                type="email"
+                class="form-control"
+                id="id"
+                requird
+                [(ngModel)]="student.studEmail"
+                name="studEmail"
+              />
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="id">Enter Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="id"
+                requird
+                [(ngModel)]="student.studPassword"
+                name="studPassword"
+              />
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="margin-right: 30%"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <div [hidden]="!submitted">
+        <!-- <h4>Form Submitted Successfully!</h4> -->
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  

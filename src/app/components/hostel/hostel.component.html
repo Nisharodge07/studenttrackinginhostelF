@@ -1,0 +1,54 @@
+
+<!-- <h3 class="container " style="color:brown;">ADD HOSTEL </h3> -->
+<br>
+<br>
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header bg-primary text-white">
+        <h4> Add Hostel Data</h4>
+      </div>
+<div [hidden]="submitted" class="container">
+
+    <div class="card-body">
+    <form (ngSubmit)="onSubmit()">
+        <!-- <div class="mb-3">
+            <label for="id" class="form-label">Enter Id</label>
+            <input type="text" class="form-control" id="id" required [(ngModel)]="hostel.hostel_id" name="id">
+        </div> -->
+
+        <div class="form-group col-md-12">
+            <label for="id">Enter Name</label>
+            <input type="text" class="form-control" id="hostel_name" requird [(ngModel)]="hostel.hostel_name" name="hostel_name">
+        </div>
+
+        <div class="form-group col-md-12">
+            <label for="id">Enter capacity</label>
+            <input type="number" class="form-control" id="hostel_capacity" requird [(ngModel)]="hostel.hostel_capacity" name="hostel_capacity">
+        </div>
+
+        <div class="form-group col-md-12">
+            <label for="id">Enter Address</label>
+            <input type="text" class="form-control" id="hostel_address" requird [(ngModel)]="hostel.hostel_address" name="hostel_address">
+        </div>
+
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</div>
+
+<div [hidden]="!submitted">
+    <!-- <h4>Form Submitted Successfully!</h4> -->
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+ <!-- <p>guardiandetails works!</p>
+<h2>Guardian Details</h2>
+<hr>
+<div *ngIf="guardian">
+
+    <div>
+        <label><b> Id: </b>{{guardian.guardian_id}}</label>
+    </div>
+    <div>
+        <label><b> Name :</b>{{guardian.guardian_name}}</label>
+    </div>
+
+    <div>
+        <label><b> Capacity: </b>{{guardian.guardian_relation}}</label>
+    </div>
+
+    <div>
+        <label><b>Address : </b>{{guardian.guardian_email}}</label>
+    </div>
+
+    <div>
+        <label > <b>Contact: </b> <b>{{guardian.guardian_contact}}</b> </label>
+    </div>
+
+    <div>
+        <label > <b>Student: </b> <b>{{guardian.studentId}}</b> </label>
+    </div>
+    
+</div>
+
+
+<br>
+<br>
+
+ <button (click)="list()">Back to Player List</button>  -->
+
+ 
+ <div class="container mt-5">
+    <hr />
+    <div *ngIf="guardian" class="container mt-5">
+      <div class="card">
+        <div class="card-header" style="color: brown">
+          <h4 style="color: brown">Guardian Details</h4>
+        </div>
+  
+        <div class="card-body">
+          <p class="card-text"></p>
+  
+          <div>
+            <strong> Name:</strong> {{ guardian.guardian_name }}<br />
+          </div>
+  
+          <div><strong> EmailId: </strong>{{ guardian.guardian_email }}<br /></div>
+  
+          <div><strong> Relation: </strong>{{ guardian.guardian_relation }}<br /></div>
+  
+          <div><strong> Contact: </strong>{{ guardian.guardian_contact }}<br /></div>
+  
+          <div>
+            <strong>Student Name: </strong> {{ student.studFirstName  }}<br />
+          </div>
+  
+          <!-- <div><strong>:</strong>{{ student.studEmail }}</div> -->
+  
+          <br />
+        </div>
+  
+        <div></div>
+  
+        <br />
+        <br />
+      </div>
+      <!-- <button (click)="list()">Back to Player List</button> -->
+  
+      <!--  
+      <div class="container mt-5">
+      <div class="card">
+        <div class="card-header">Student Details</div>
+        <div class="card-body">
+          <h5 class="card-title">John Doe</h5>
+          <p class="card-text">
+            <strong>Roll Number:</strong> 12345<br />
+            <strong>Class:</strong> 10th Grade<br />
+            <strong>Subjects:</strong> Math, Science, English<br />
+            <strong>Address:</strong> 123 Main Street, Cityville
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+    </div>
+  </div>
+  

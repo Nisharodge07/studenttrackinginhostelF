@@ -1,0 +1,89 @@
+<p>attendence works!</p>
+<div class="container mt-5">
+    <br>
+    <br>
+<div class="card">  
+<div [hidden]="submitted" >
+    <div class="card-header bg-primary text-white">
+        <h4>Add Attendence </h4>
+      </div>
+
+      <div class="card-body">
+    <form (ngSubmit)="onSubmit()">
+        
+
+        <!-- <div class="form-row"> 
+            <div class="form-group col-md-6">
+                <label for="id">Enter  id</label>
+                <input type="number" class="form-control" id="id" requird [(ngModel)]="guardian.guardian_id" name="guardian_id">
+            </div> -->
+
+    <div class="form-row"> 
+        <!-- <div class="form-group col-md-6">
+            <label for="id">Enter  id</label>
+            <input type="number" class="form-control" id="id" requird [(ngModel)]="attendence.attendence_id" name="attendence_id">
+        </div> -->
+
+        <div class="form-group col-md-6">
+            <label for="date">Enter date</label>
+            <input type="date" class="form-control" id="date" requird [(ngModel)]="attendence.attendence_date " name="attendence_date">
+        </div>
+    </div> 
+
+    <div class="form-row"> 
+        <div class="form-group col-md-6">
+            <label for="text">Enter status</label>
+            <input type="text" class="form-control" id="status" requird [(ngModel)]="attendence.attendence_status" name="attendence_status">
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="leave">Enter leave days</label>
+            <input type="number" class="form-control" id="leave" requird [(ngModel)]="attendence.leaveDays" name="leave">
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="leave">Enter StudentId</label>
+            <input type="number" class="form-control" id="studId" requird [(ngModel)]="attendence.studId" name="studId">
+        </div>
+
+    </div>   
+        <!-- <div class="mb-3">
+            <label for="id">Enter studentId</label>
+            <input type="id" class="form-control" id="studentId" requird [(ngModel)]="guardian.students" name="studentId">
+        </div> 
+
+        <div class="mb-3">
+            <label for="stud">Choose student:</label>
+    
+          <select  name="stud" id="stud" #selectedstud >
+              <option *ngFor="let s of students|async ; let i = index" value="{{i}}"> {{s.studId}}</option>
+             
+            </select>
+            
+            <button type="button" (click)="addattendstud(selectedstud.value)" class="btn btn-info" style="margin-left: 10px">Add  student</button>
+          </div>
+        -->
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div> 
+</div>
+
+<div [hidden]="!submitted">
+    <!-- <h4>Form Submitted Successfully!</h4> -->
+
+</div>
+<!-- <br>
+  <div *ngFor="let g of attendence.students">
+    <p>{{g.studId}}</p>
+    <p>{{g.studFirstName}}</p>
+    <p>{{g.studLastName}}</p>
+    <p>{{g.studEmail}}</p>
+    <p>{{g.studContact}}</p>
+    <p>{{g.studDOB}}</p>
+    <p>{{attendence}}</p>
+  </div> -->
+
+</div>
+</div>  
